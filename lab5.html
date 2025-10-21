@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px;
+}
+p { color: #333; }
+#main-heading {
+    color: #006699;
+    text-align: center;
+}
+.note {
+    background: #b0a04a;
+    padding: 5px;
+}
+
+h1, h2 {
+    color: #004d40;
+}
+
+div p {
+    color: #1a73e8;
+}
+div > ul > li {
+    color: #d63384;
+}
+
+Pseudo-classes
+a:hover { color: red; }
+ul li:first-child { font-weight: bold; }
+ul li:last-child { color: green; }
+.intro::first-letter {
+    font-size: 1.8em;
+    color: rgb(135, 109, 62);
+    font-weight: bold;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - CSS Selectors</title>
+    <link rel="stylesheet" href="lab5.css">  
+    
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Lab 5: CSS Selectors</h1>
+    <p>This experiment shows how different CSS selectors style HTML elements.</p>
+    <img src="csslogo.png" alt="CSS Image" width="180">
+    <h2>Class & ID Selectors</h2>
+    <p class="note">This paragraph uses a class selector to highlight text.</p>
+    <p>Normal paragraph styled with element selector.</p>
+    <div>
+        <h2>Descendant & Child</h2>
+        <p>This paragraph is inside a div, styled using a descendant selector.</p>
+        <ul>
+            <li>Item 1</li>
+            <li class="special">Item 2</li>
+            <li>
+                Nested List:
+                <ul>
+                    <li>Nested Item</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Last</li>
+    </ul>
+    <p class="intro">This paragraph has a styled first letter using pseudo-element.</p>
+    <a href="lab2.html"> Back to Homepage</a>
+</body>
+</html>

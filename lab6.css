@@ -1,0 +1,84 @@
+
+body {
+    background: #e7dada;
+    margin: 30px;
+    font-family: Verdana, sans-serif;
+}
+.course,
+ .Me { color: #2e559d;
+
+}
+.title {
+    text-align: center;
+    color: #324094;
+}
+
+
+.txt {
+    text-align: center;
+    margin: 18px 0;
+    font-size: 17px;
+    color: #261292;
+}
+
+.labs ol li {
+    margin: 6px 0;
+}
+
+.m {
+    padding: 8px 14px;
+    font-size: 15px;
+    background: #6675a9;
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.m:hover {
+    background: #8a0303;
+}
+
+.container {
+    display: none;
+    background: #c4e3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mob {
+    list-style: none;
+    padding: 0;
+}
+
+.mob li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.mob a {
+    font-size: 18px;
+    color: #214c9c;
+    text-decoration: none;
+}
+
+.last {
+    font-weight: bold;
+    color: #2437a3;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        background: #b4ebeb;
+        font-size: 15px;
+    }
+
+    .m {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+}

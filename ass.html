@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="head">
+            <div class="title">Responsive Quiz App</div>
+        </header>
+        <main class="ma">
+            <section id="welcome" class="screen active">
+                <div class="welcome">
+                    <div class="left">
+                        <h1>Welcome to the Web Tech Quiz!</h1>
+                        <p>This quiz includes MCQs and True/False questions. Answers show feedback instantly.</p>
+
+                        <button id="startBtn" class="btn bp">Start Quiz</button>
+                    </div>
+
+                    <div class="card info">
+                        <h3>Quiz Details</h3>
+                        <p>Total Questions: <strong id="totalQs">5</strong></p>
+                    </div>
+                </div> 
+            </section>
+            <section id="quiz" class="screen card">
+                <div class="qmeta">
+                    <div>Question <span id="curIdx">1</span> / <span id="total">5</span></div>
+                    <div class="qscore">Score: <span id="curScore">0</span></div>
+                </div>
+
+                <div class="progressbar">
+                    <div id="prog" class="progress-inner"></div>
+                </div>
+
+                <div id="questionText" class="question"></div>
+
+                <div id="options" class="options"></div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <div class="controls">
+                    <button id="prevBtn" class="btn bg" disabled>Prev</button>
+                    <button id="nextBtn" class="btn bp" disabled>Next</button>
+                </div>
+            </section>
+
+            <section id="result" class="screen card">
+                <h2 id="finalMsg" class="large"></h2>
+                <p id="finalSub" class="sub"></p>
+
+                <div class="details">
+                    <div class="chip">Score: <strong id="finalScore"></strong></div>
+                    <div class="chip">Total: <strong id="finalTotal"></strong></div>
+                    <div class="chip">Percentage: <strong id="finalPercent"></strong></div>
+                </div>
+
+                <button id="retryBtn" class="btn bg">Retry</button>
+                <button id="homeBtn" class="btn bp">Home</button>
+            </section>
+        </main>
+        <footer class="foot">
+            <div>Instructor: Muhammad Naveed Sheikh</div>
+            <div>Made by: Fizza Razzaq</div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
